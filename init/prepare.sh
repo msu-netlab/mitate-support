@@ -3,6 +3,7 @@
 set -x
 set -e
 
+mkdir ~/mlab/build
 export SOURCE_DIR=~/mlab/mitate-support
 export BUILD_DIR=~/mlab/build
 
