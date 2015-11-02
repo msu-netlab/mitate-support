@@ -19,7 +19,7 @@ mkdir mlab 2> /dev/null
 # generate jars for server
 cd bin
 echo "Main-Class: MNEPAcceptConnection" > manifest
-jar cvfm MITATE.jar manifest -C . *.class
+jar cvfm MITATE.jar manifest -C com/ .
 mv MITATE.jar ../mlab
 
 rm manifest
