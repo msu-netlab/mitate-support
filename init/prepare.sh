@@ -19,6 +19,11 @@ if test -d $BUILD_DIR ; then
     rm -rf $BUILD_DIR/*
 fi
 
+chmod 777 ../MITATE/MeasurementServer/compile.sh
+chmod 777 ../MITATE/MeasurementServer/initialize.sh
+chmod 777 ../MITATE/MeasurementServer/start.sh
+chmod 777 ../MITATE/MeasurementServer/stop.sh
+
 pushd $SOURCE_DIR/MITATE/MeasurementServer
     ./compile.sh
 popd
