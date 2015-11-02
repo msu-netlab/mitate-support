@@ -4,7 +4,7 @@ set -x
 set -e
 
 export SOURCE_DIR=/home/utkarsh.goel/mlab/mitate-support
-export BUILD_DIR=/home/utkarsh.goel/mlab/temp
+export BUILD_DIR=/home/utkarsh.goel/mlab/build
 
 if [ -z "$SOURCE_DIR" ] ; then
     echo "Expected SOURCE_DIR in environment"
