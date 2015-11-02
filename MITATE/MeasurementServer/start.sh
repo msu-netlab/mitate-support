@@ -1,9 +1,9 @@
 #!/bin/bash
 
-exec >> /var/log/MITATE 2>&1
-echo "####### Running /home/montana_1/init/start.sh at `date` ########"
+#exec >> /var/log/MITATE 2>&1
+echo "Running start.sh at `date`"
 
-cd /home/montana_1/MITATE
+cd ../MITATE
 
 services="MITATE:32165:tcp"
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 #this script needs to be run from the current directory
-exec >> /var/log/MITATE 2>&1
-echo "####### Running /home/montana_1/init/stop.sh at `date` ########"
+#exec >> /var/log/MITATE 2>&1
+echo "Running stop.sh at `date`"
 
 for i in MITATE
 do

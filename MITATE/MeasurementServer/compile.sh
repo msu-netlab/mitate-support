@@ -1,14 +1,13 @@
 #!/bin/bash
 
 cd src
-#javac -d ../bin servers/*.java
 mkdir ../bin 2> /dev/null
 
 # compile server
 javac -target 1.7 -source 1.7 -d ../bin ./*.java 
 if [ $? -ne 0 ]
 then
-    echo "Fail to compile source code of tcp server"
+    echo "Failed to compile the server code."
     exit $?
 fi
 
@@ -18,9 +17,9 @@ mkdir mlab 2> /dev/null
 # generate jars for server
 cd bin
 echo "Main-Class: MNEPAcceptConnection" > manifest
-jar cvfm MITATE.jar manifest *.class
+jar cvfm MITATE.jar manifest -C . *.class
 mv MITATE.jar ../mlab
 
 rm manifest
-echo "Successful compile the UDP server code."
+echo "Successful compiled the server code."
 cd ..
