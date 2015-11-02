@@ -36,7 +36,7 @@ do
         done
 
         if [ $started == "no" ]; then
-                echo "${jar} failed to start for some reason."
+                echo "${jar} failed to start."
                 exit 1
         fi
 done

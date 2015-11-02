@@ -3,8 +3,8 @@
 set -x
 set -e
 
-export SOURCE_DIR=/home/utkarsh.goel/mlab/mitate-support
-export BUILD_DIR=/home/utkarsh.goel/mlab/build
+export SOURCE_DIR=~/mlab/mitate-support
+export BUILD_DIR=~/mlab/build
 
 if [ -z "$SOURCE_DIR" ] ; then
     echo "Expected SOURCE_DIR in environment"
@@ -20,7 +20,7 @@ if test -d $BUILD_DIR ; then
 fi
 
 pushd $SOURCE_DIR/MITATE/MeasurementServer
-    ./init/compile.sh
+    ./compile.sh
 popd
 
 mkdir -p $BUILD_DIR/MITATE

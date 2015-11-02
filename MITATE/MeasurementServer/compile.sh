@@ -10,6 +10,8 @@ then
     echo "Failed to compile the server code."
     exit $?
 fi
+mkdir ../bin/com/mysql
+cp -R com/mysql ../bin/com/mysql
 
 cd ..
 mkdir mlab 2> /dev/null
