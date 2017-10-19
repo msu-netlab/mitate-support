@@ -26,6 +26,3 @@ popd
 
 mkdir -p $BUILD_DIR/MITATE
 cp -r $SOURCE_DIR/MITATE/MeasurementServer/mlab/*  $BUILD_DIR/MITATE/
-install -D -m 0755 $SOURCE_DIR/MITATE/MeasurementServer/initialize.sh $BUILD_DIR/init/initialize.sh
-install -D -m 0755 $SOURCE_DIR/MITATE/MeasurementServer/start.sh $BUILD_DIR/init/start.sh
-install -D -m 0755 $SOURCE_DIR/MITATE/MeasurementServer/stop.sh $BUILD_DIR/init/stop.sh
