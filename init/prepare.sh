@@ -26,3 +26,6 @@ popd
 
 mkdir -p $BUILD_DIR/MITATE
 cp -r $SOURCE_DIR/MITATE/MeasurementServer/mlab/*  $BUILD_DIR/MITATE/
+
+# Install init scripts
+cp -r $SOURCE_DIR/init $BUILD_DIR/
